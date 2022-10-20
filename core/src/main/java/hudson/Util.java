@@ -649,7 +649,7 @@ public class Util {
             "This method should only be used for non-security applications where the MD5 weakness is not a problem.")
     @Deprecated
     private static MessageDigest getMd5() throws NoSuchAlgorithmException {
-        return MessageDigest.getInstance("MD5");
+        return MessageDigest.getInstance("SHA-256");
     }
 
     @NonNull
